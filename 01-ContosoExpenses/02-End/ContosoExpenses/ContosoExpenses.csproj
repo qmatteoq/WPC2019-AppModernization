@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\contoso.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddNewExpense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\contoso.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ExpensesBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ExpensesListBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HorizontalBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContosoExpenses.Data\ContosoExpenses.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator" Version="2.0.2" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.2" />
+    <PackageReference Include="Unity" Version="5.10.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.6.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>
